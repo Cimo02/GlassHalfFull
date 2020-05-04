@@ -115,7 +115,7 @@
         <!--History-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Glass_Half_Full" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="HistoryVC" customModule="Glass_Half_Full" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,26 +126,30 @@
                                 <color key="textColor" name="app-blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS Charts API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nff-lM-D8a">
-                                <rect key="frame" x="93" y="385" width="229" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOu-7N-VS0" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="197" width="374" height="516"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="pOu-7N-VS0" secondAttribute="bottom" constant="100" id="7zB-hl-zki"/>
+                            <constraint firstItem="pOu-7N-VS0" firstAttribute="centerX" secondItem="ELT-wb-Ws5" secondAttribute="centerX" id="9tj-hW-xqe"/>
                             <constraint firstItem="ELT-wb-Ws5" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="LXt-cI-14S"/>
+                            <constraint firstItem="pOu-7N-VS0" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="197" id="W5H-vj-ICD"/>
+                            <constraint firstItem="pOu-7N-VS0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="u1U-2j-dY4"/>
                             <constraint firstItem="ELT-wb-Ws5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="25" id="xE3-4H-E7t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="chart.bar.fill" catalog="system" selectedImage="chart.bar.fill" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="chartView" destination="pOu-7N-VS0" id="2hH-QC-j7h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-648" y="109"/>
+            <point key="canvasLocation" x="-649.27536231884062" y="108.48214285714285"/>
         </scene>
         <!--Reminders-->
         <scene sceneID="y48-s7-DgR">

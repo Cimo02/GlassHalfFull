@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A013385873032613B3D23F36 /* Pods_Glass_Half_Full.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6E55079403EAD87BEE1B8A /* Pods_Glass_Half_Full.framework */; };
 		C92B519F245F2892003325D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B519E245F2892003325D0 /* AppDelegate.swift */; };
 		C92B51A1245F2892003325D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B51A0245F2892003325D0 /* SceneDelegate.swift */; };
-		C92B51A3245F2892003325D0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B51A2245F2892003325D0 /* FirstViewController.swift */; };
 		C92B51A5245F2892003325D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B51A4245F2892003325D0 /* SecondViewController.swift */; };
 		C92B51A8245F2892003325D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92B51A6245F2892003325D0 /* Main.storyboard */; };
 		C92B51AA245F2895003325D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92B51A9245F2895003325D0 /* Assets.xcassets */; };
 		C92B51AD245F2895003325D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92B51AB245F2895003325D0 /* LaunchScreen.storyboard */; };
+		C9BFA97F2460C7FD007B601C /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BFA97E2460C7FD007B601C /* HistoryVC.swift */; };
 		C9C189B02460736B0053A878 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C189AF2460736B0053A878 /* SettingsVC.swift */; };
 		C9C189C224607B710053A878 /* water image.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189C024607B710053A878 /* water image.png */; };
 		C9C189D224607C7D0053A878 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189D124607C7D0053A878 /* splash.png */; };
@@ -22,20 +23,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20A70A420D1E202A1F182466 /* Pods-Glass-Half-Full.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glass-Half-Full.debug.xcconfig"; path = "Target Support Files/Pods-Glass-Half-Full/Pods-Glass-Half-Full.debug.xcconfig"; sourceTree = "<group>"; };
+		BD6E55079403EAD87BEE1B8A /* Pods_Glass_Half_Full.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Glass_Half_Full.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92B519B245F2892003325D0 /* Glass Half Full.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass Half Full.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92B519E245F2892003325D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92B51A0245F2892003325D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C92B51A2245F2892003325D0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C92B51A4245F2892003325D0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C92B51A7245F2892003325D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C92B51A9245F2895003325D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C92B51AC245F2895003325D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92B51AE245F2895003325D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9BFA97E2460C7FD007B601C /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		C9C189AF2460736B0053A878 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C9C189C024607B710053A878 /* water image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water image.png"; sourceTree = "<group>"; };
 		C9C189D124607C7D0053A878 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		C9C189D324607EB80053A878 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C9C189D5246081000053A878 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		D86AC926F8E50D2A7CDF2FFB /* Pods-Glass-Half-Full.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glass-Half-Full.release.xcconfig"; path = "Target Support Files/Pods-Glass-Half-Full/Pods-Glass-Half-Full.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A013385873032613B3D23F36 /* Pods_Glass_Half_Full.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EB8002EA693A64BDF1DCDCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD6E55079403EAD87BEE1B8A /* Pods_Glass_Half_Full.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88351BF15A9ACDC21B04CF3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A70A420D1E202A1F182466 /* Pods-Glass-Half-Full.debug.xcconfig */,
+				D86AC926F8E50D2A7CDF2FFB /* Pods-Glass-Half-Full.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C92B5192245F2892003325D0 = {
 			isa = PBXGroup;
 			children = (
 				C92B519D245F2892003325D0 /* Glass-Half-Full */,
 				C92B519C245F2892003325D0 /* Products */,
+				88351BF15A9ACDC21B04CF3A /* Pods */,
+				7EB8002EA693A64BDF1DCDCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +97,6 @@
 				C92B51B4245F28B5003325D0 /* images */,
 				C92B519E245F2892003325D0 /* AppDelegate.swift */,
 				C92B51A0245F2892003325D0 /* SceneDelegate.swift */,
-				C92B51A2245F2892003325D0 /* FirstViewController.swift */,
 				C92B51A4245F2892003325D0 /* SecondViewController.swift */,
 				C92B51A6245F2892003325D0 /* Main.storyboard */,
 				C92B51A9245F2895003325D0 /* Assets.xcassets */,
@@ -105,6 +128,7 @@
 			children = (
 				C9C189AF2460736B0053A878 /* SettingsVC.swift */,
 				C9C189D324607EB80053A878 /* HomeVC.swift */,
+				C9BFA97E2460C7FD007B601C /* HistoryVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -116,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C92B51B1245F2895003325D0 /* Build configuration list for PBXNativeTarget "Glass-Half-Full" */;
 			buildPhases = (
+				009021AC20FED0DB6A1A4C32 /* [CP] Check Pods Manifest.lock */,
 				C92B5197245F2892003325D0 /* Sources */,
 				C92B5198245F2892003325D0 /* Frameworks */,
 				C92B5199245F2892003325D0 /* Resources */,
+				B16BEF67A26FA496AB81E1C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,14 +203,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		009021AC20FED0DB6A1A4C32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Glass-Half-Full-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B16BEF67A26FA496AB81E1C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glass-Half-Full/Pods-Glass-Half-Full-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Glass-Half-Full/Pods-Glass-Half-Full-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Glass-Half-Full/Pods-Glass-Half-Full-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C92B5197245F2892003325D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BFA97F2460C7FD007B601C /* HistoryVC.swift in Sources */,
 				C9C189D6246081000053A878 /* Day.swift in Sources */,
 				C92B51A5245F2892003325D0 /* SecondViewController.swift in Sources */,
-				C92B51A3245F2892003325D0 /* FirstViewController.swift in Sources */,
 				C92B519F245F2892003325D0 /* AppDelegate.swift in Sources */,
 				C9C189D424607EB80053A878 /* HomeVC.swift in Sources */,
 				C92B51A1245F2892003325D0 /* SceneDelegate.swift in Sources */,
@@ -330,6 +398,7 @@
 		};
 		C92B51B2245F2895003325D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A70A420D1E202A1F182466 /* Pods-Glass-Half-Full.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +416,7 @@
 		};
 		C92B51B3245F2895003325D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86AC926F8E50D2A7CDF2FFB /* Pods-Glass-Half-Full.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
