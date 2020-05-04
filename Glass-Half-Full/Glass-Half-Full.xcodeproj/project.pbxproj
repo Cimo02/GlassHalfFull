@@ -14,9 +14,11 @@
 		C92B51A8245F2892003325D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92B51A6245F2892003325D0 /* Main.storyboard */; };
 		C92B51AA245F2895003325D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92B51A9245F2895003325D0 /* Assets.xcassets */; };
 		C92B51AD245F2895003325D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92B51AB245F2895003325D0 /* LaunchScreen.storyboard */; };
-		C92B51BA245F28DA003325D0 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C92B51B7245F28D9003325D0 /* splash.png */; };
-		C92B51BB245F28DA003325D0 /* water image.svg in Resources */ = {isa = PBXBuildFile; fileRef = C92B51B8245F28D9003325D0 /* water image.svg */; };
-		C92B51BC245F28DA003325D0 /* water image.png in Resources */ = {isa = PBXBuildFile; fileRef = C92B51B9245F28D9003325D0 /* water image.png */; };
+		C9C189B02460736B0053A878 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C189AF2460736B0053A878 /* SettingsVC.swift */; };
+		C9C189C224607B710053A878 /* water image.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189C024607B710053A878 /* water image.png */; };
+		C9C189D224607C7D0053A878 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189D124607C7D0053A878 /* splash.png */; };
+		C9C189D424607EB80053A878 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C189D324607EB80053A878 /* HomeVC.swift */; };
+		C9C189D6246081000053A878 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C189D5246081000053A878 /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,11 @@
 		C92B51A9245F2895003325D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C92B51AC245F2895003325D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92B51AE245F2895003325D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C92B51B7245F28D9003325D0 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = "../../../../Downloads/drive-download-20200503T162521Z-001/splash.png"; sourceTree = "<group>"; };
-		C92B51B8245F28D9003325D0 /* water image.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "water image.svg"; path = "../../../../Downloads/drive-download-20200503T162521Z-001/water image.svg"; sourceTree = "<group>"; };
-		C92B51B9245F28D9003325D0 /* water image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "water image.png"; path = "../../../../Downloads/drive-download-20200503T162521Z-001/water image.png"; sourceTree = "<group>"; };
+		C9C189AF2460736B0053A878 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		C9C189C024607B710053A878 /* water image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water image.png"; sourceTree = "<group>"; };
+		C9C189D124607C7D0053A878 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		C9C189D324607EB80053A878 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C9C189D5246081000053A878 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +86,8 @@
 		C92B51B4245F28B5003325D0 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				C92B51B7245F28D9003325D0 /* splash.png */,
-				C92B51B9245F28D9003325D0 /* water image.png */,
-				C92B51B8245F28D9003325D0 /* water image.svg */,
+				C9C189D124607C7D0053A878 /* splash.png */,
+				C9C189C024607B710053A878 /* water image.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -92,6 +95,7 @@
 		C92B51B5245F28BB003325D0 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				C9C189D5246081000053A878 /* Day.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -99,6 +103,8 @@
 		C92B51B6245F28C0003325D0 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9C189AF2460736B0053A878 /* SettingsVC.swift */,
+				C9C189D324607EB80053A878 /* HomeVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -161,12 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92B51BA245F28DA003325D0 /* splash.png in Resources */,
+				C9C189C224607B710053A878 /* water image.png in Resources */,
 				C92B51AD245F2895003325D0 /* LaunchScreen.storyboard in Resources */,
-				C92B51BC245F28DA003325D0 /* water image.png in Resources */,
-				C92B51BB245F28DA003325D0 /* water image.svg in Resources */,
 				C92B51AA245F2895003325D0 /* Assets.xcassets in Resources */,
 				C92B51A8245F2892003325D0 /* Main.storyboard in Resources */,
+				C9C189D224607C7D0053A878 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C189D6246081000053A878 /* Day.swift in Sources */,
 				C92B51A5245F2892003325D0 /* SecondViewController.swift in Sources */,
 				C92B51A3245F2892003325D0 /* FirstViewController.swift in Sources */,
 				C92B519F245F2892003325D0 /* AppDelegate.swift in Sources */,
+				C9C189D424607EB80053A878 /* HomeVC.swift in Sources */,
 				C92B51A1245F2892003325D0 /* SceneDelegate.swift in Sources */,
+				C9C189B02460736B0053A878 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
