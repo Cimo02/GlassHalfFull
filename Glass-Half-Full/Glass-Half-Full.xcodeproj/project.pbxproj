@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C92B519B245F2892003325D0 /* Glass-Half-Full.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass-Half-Full.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92B519B245F2892003325D0 /* Glass Half Full.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Glass Half Full.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92B519E245F2892003325D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C92B51A0245F2892003325D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C92B51A2245F2892003325D0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		C92B519C245F2892003325D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C92B519B245F2892003325D0 /* Glass-Half-Full.app */,
+				C92B519B245F2892003325D0 /* Glass Half Full.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			);
 			name = "Glass-Half-Full";
 			productName = "Glass-Half-Full";
-			productReference = C92B519B245F2892003325D0 /* Glass-Half-Full.app */;
+			productReference = C92B519B245F2892003325D0 /* Glass Half Full.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tyler.ciarmataro.Glass-Half-Full";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Glass Half Full";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -356,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tyler.ciarmataro.Glass-Half-Full";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Glass Half Full";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
