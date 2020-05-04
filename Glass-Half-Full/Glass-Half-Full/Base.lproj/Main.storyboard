@@ -306,7 +306,7 @@
         <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
         <image name="water image.png" width="513" height="512"/>
         <namedColor name="app-blue">
-            <color red="0.13699999451637268" green="0.62699997425079346" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13700000000000001" green="0.62699997425079346" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

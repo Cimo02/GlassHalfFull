@@ -24,6 +24,7 @@ class HistoryVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         // load the daysList here
+        
         let defaults = UserDefaults.standard
         if let savedDays = defaults.object(forKey: "waterData") as? Data {
             let decoder = JSONDecoder()
@@ -37,10 +38,16 @@ class HistoryVC: UIViewController {
             }
         }
         
+        // reset value arrays
+        dates = []
+        cups = []
+        
         for day in daysList {
             dates.append(day.date)
             cups.append(day.cups)
         }
+        
+        chartView.animate(xAxisDuration: 2.0, yAxisDuration:2.0, easingOption: .easeInSine)
         
         createChart()
     }
@@ -63,14 +70,26 @@ class HistoryVC: UIViewController {
         waterLine.colors = [appBlue] //Sets the colour to blue
         waterLine.setCircleColor(appBlue)
         waterLine.circleHoleColor = appBlue
+        waterLine.circleRadius = 3.0
         
+        //gradient settings
+        let colors = [CGColor(srgbRed: 0.137, green: 0.627, blue: 0.984, alpha: 1.0), UIColor.clear.cgColor] as CFArray
+        let colorLocations:[CGFloat] = [1.0, 0.0]
+        guard let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: colors, locations: colorLocations) else { print("gradient error"); return}
+        waterLine.fill = Fill.fillWithLinearGradient(gradient, angle: 90.0)
+        waterLine.drawFilledEnabled = true
         
+        //data settings
         let data = LineChartData() //This is the object that will be added to the chart
         data.addDataSet(waterLine) //Adds the line to the dataSet
         data.setDrawValues(true)
         
         // chartView styling and setting data
         chartView.backgroundColor = UIColor.white
+        chartView.xAxis.labelPosition = .bottom
+        chartView.xAxis.drawGridLinesEnabled = false
+        chartView.rightAxis.enabled = false
+        chartView.leftAxis.drawGridLinesEnabled = false
         chartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: dates)
         chartView.xAxis.granularity = 1
         chartView.data = data //finally - it adds the chart data to the chart and causes an update
