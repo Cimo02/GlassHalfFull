@@ -39,9 +39,6 @@ class RemindersVC: UIViewController, UNUserNotificationCenterDelegate {
         }
     }
     
-    func sendNotification() {
-    }
-    
     @IBAction func updateReminder(_ sender: Any) {
         // Create new notifcation content instance
         let notificationContent = UNMutableNotificationContent()

@@ -70,9 +70,9 @@ class HistoryVC: UIViewController {
         waterLine.colors = [appBlue] //Sets the colour to blue
         waterLine.setCircleColor(appBlue)
         waterLine.circleHoleColor = appBlue
-        waterLine.circleRadius = 3.0
+        waterLine.circleRadius = 5.0
         
-        //gradient settings
+        //gradient settings for underneath the line
         let colors = [CGColor(srgbRed: 0.137, green: 0.627, blue: 0.984, alpha: 1.0), UIColor.clear.cgColor] as CFArray
         let colorLocations:[CGFloat] = [1.0, 0.0]
         guard let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: colors, locations: colorLocations) else { print("gradient error"); return}

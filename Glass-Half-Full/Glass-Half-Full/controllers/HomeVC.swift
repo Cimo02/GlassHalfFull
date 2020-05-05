@@ -64,8 +64,6 @@ class HomeVC: UIViewController {
             target = defaults.integer(forKey: "target")
         }
         targetLabel!.text = "\(target)"
-        
-        // if current day doesn't exist, create a new day
     }
     
     // user presses button to add a cup
@@ -102,6 +100,7 @@ class HomeVC: UIViewController {
         }
     }
     
+    // only for debugging and testing, wouldn't run on production build
     func addMockData() {
         print("Adding mock data...")
         
