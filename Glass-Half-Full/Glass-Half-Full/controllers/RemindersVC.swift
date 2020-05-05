@@ -13,15 +13,19 @@ class RemindersVC: UIViewController, UNUserNotificationCenterDelegate {
     let userNotificationCenter = UNUserNotificationCenter.current()
     @IBOutlet weak var currentReminderLabel: UILabel!
     @IBOutlet weak var timePicker: UIDatePicker!
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.userNotificationCenter.delegate = self
-        
         self.requestNotificationAuthorization()
-        //self.sendNotification()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if defaults.object(forKey: "reminderTime") != nil {
+            currentReminderLabel!.text = defaults.string(forKey: "reminderTime")
+        }
     }
     
     func requestNotificationAuthorization() {
@@ -36,7 +40,6 @@ class RemindersVC: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     func sendNotification() {
-        
     }
     
     @IBAction func updateReminder(_ sender: Any) {
@@ -49,16 +52,29 @@ class RemindersVC: UIViewController, UNUserNotificationCenterDelegate {
         notificationContent.sound = UNNotificationSound.default
         notificationContent.badge = NSNumber(value: 1)
         
+        // create calender object for user selected time
+        let dateComponents = Calendar.current.dateComponents([.hour, .minute], from: timePicker.date)
+        
+        let timeString = "\(dateComponents.hour!):\(dateComponents.minute!)"
+        defaults.set(timeString, forKey: "reminderTime")
+        currentReminderLabel!.text = timeString
+        
         // add the reminder trigger
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60,
-        repeats: true)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         // create request and add it to the notification center
         let request = UNNotificationRequest(identifier: "waterNotification", content: notificationContent, trigger: trigger)
+        
         userNotificationCenter.add(request) { (error) in
             if let error = error {
                 print("Notification Error: ", error)
             }
         }
+    }
+    
+    @IBAction func stopReminder(_ sender: Any) {
+        userNotificationCenter.removeAllPendingNotificationRequests()
+        defaults.set("N/A", forKey: "reminderTime")
+        currentReminderLabel!.text = "N/A"
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {

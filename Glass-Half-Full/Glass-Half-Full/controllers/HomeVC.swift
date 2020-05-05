@@ -28,8 +28,8 @@ class HomeVC: UIViewController {
         if defaults.object(forKey: "waterData") as? Data ?? nil == nil {
             // no waterHistory exists
             
-            // create test days DEBUG ONLY DELETE BEFORE SUBMISSION
-            addMockData()
+            // UNCOMMENT TO HAVE THE APP CREATE AND SAVE TEST DAYS HERE
+            //addMockData()
             
             // have to create a day and add it to daysList
             daysList.append(Day())

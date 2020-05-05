@@ -182,7 +182,7 @@
                                 <color key="textColor" name="app-blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="E7y-CN-6aw">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="E7y-CN-6aw">
                                 <rect key="frame" x="0.0" y="344" width="414" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="196" id="OfB-rM-Q86"/>
@@ -204,6 +204,23 @@
                                 <color key="textColor" name="app-blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reminder repeats everyday at this time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAv-Ym-fPP">
+                                <rect key="frame" x="20" y="190" width="148" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-Qe-adE">
+                                <rect key="frame" x="120" y="602" width="175" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Stop Reminder">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopReminder:" destination="2mT-YR-ASA" eventType="touchUpInside" id="Wk3-gC-QQZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -215,11 +232,14 @@
                             <constraint firstItem="tS8-hw-RfB" firstAttribute="bottom" secondItem="vNq-N8-V30" secondAttribute="bottom" constant="229" id="aR3-LF-XAk"/>
                             <constraint firstItem="vNq-N8-V30" firstAttribute="centerX" secondItem="QIt-Uo-6eB" secondAttribute="centerX" id="eCd-J2-3l3"/>
                             <constraint firstItem="cZQ-iE-dys" firstAttribute="centerX" secondItem="QIt-Uo-6eB" secondAttribute="centerX" id="eQN-VO-YqG"/>
+                            <constraint firstItem="bcB-Qe-adE" firstAttribute="leading" secondItem="tS8-hw-RfB" secondAttribute="leading" constant="120" id="eg8-Tx-CzG"/>
                             <constraint firstItem="02f-6n-5fh" firstAttribute="leading" secondItem="QIt-Uo-6eB" secondAttribute="leadingMargin" id="jvC-35-iND"/>
                             <constraint firstItem="25S-e6-NGZ" firstAttribute="trailing" secondItem="QIt-Uo-6eB" secondAttribute="trailingMargin" id="l1X-Fn-R5m"/>
                             <constraint firstItem="E7y-CN-6aw" firstAttribute="leading" secondItem="tS8-hw-RfB" secondAttribute="leading" id="lhC-vO-x3g"/>
+                            <constraint firstItem="bcB-Qe-adE" firstAttribute="top" secondItem="vNq-N8-V30" secondAttribute="bottom" constant="18" id="myL-vd-HQy"/>
                             <constraint firstItem="E7y-CN-6aw" firstAttribute="centerX" secondItem="vNq-N8-V30" secondAttribute="centerX" id="nAk-R4-bzA"/>
                             <constraint firstItem="vNq-N8-V30" firstAttribute="top" secondItem="E7y-CN-6aw" secondAttribute="bottom" constant="20" id="xAr-2S-Jlx"/>
+                            <constraint firstItem="bcB-Qe-adE" firstAttribute="centerX" secondItem="vNq-N8-V30" secondAttribute="centerX" id="zM4-Tz-mnc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tS8-hw-RfB"/>
                     </view>
