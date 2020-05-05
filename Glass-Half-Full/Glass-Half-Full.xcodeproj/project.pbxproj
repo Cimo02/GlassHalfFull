@@ -15,6 +15,7 @@
 		C92B51AA245F2895003325D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C92B51A9245F2895003325D0 /* Assets.xcassets */; };
 		C92B51AD245F2895003325D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92B51AB245F2895003325D0 /* LaunchScreen.storyboard */; };
 		C9BFA97F2460C7FD007B601C /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BFA97E2460C7FD007B601C /* HistoryVC.swift */; };
+		C9BFA9812460E008007B601C /* RemindersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BFA9802460E008007B601C /* RemindersVC.swift */; };
 		C9C189B02460736B0053A878 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C189AF2460736B0053A878 /* SettingsVC.swift */; };
 		C9C189C224607B710053A878 /* water image.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189C024607B710053A878 /* water image.png */; };
 		C9C189D224607C7D0053A878 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C9C189D124607C7D0053A878 /* splash.png */; };
@@ -34,6 +35,7 @@
 		C92B51AC245F2895003325D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C92B51AE245F2895003325D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9BFA97E2460C7FD007B601C /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		C9BFA9802460E008007B601C /* RemindersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersVC.swift; sourceTree = "<group>"; };
 		C9C189AF2460736B0053A878 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		C9C189C024607B710053A878 /* water image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "water image.png"; sourceTree = "<group>"; };
 		C9C189D124607C7D0053A878 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				C9C189AF2460736B0053A878 /* SettingsVC.swift */,
 				C9C189D324607EB80053A878 /* HomeVC.swift */,
 				C9BFA97E2460C7FD007B601C /* HistoryVC.swift */,
+				C9BFA9802460E008007B601C /* RemindersVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				C92B519F245F2892003325D0 /* AppDelegate.swift in Sources */,
 				C9C189D424607EB80053A878 /* HomeVC.swift in Sources */,
 				C92B51A1245F2892003325D0 /* SceneDelegate.swift in Sources */,
+				C9BFA9812460E008007B601C /* RemindersVC.swift in Sources */,
 				C9C189B02460736B0053A878 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
